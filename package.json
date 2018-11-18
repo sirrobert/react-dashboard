@@ -139,6 +139,14 @@
     "*.{css,less,scss,sss}": ["stylelint --fix", "git add --force"]
   },
   "scripts": {
+
+		"//---------" : "Scripts for deploying to azure",
+		"postinstall" : "npm run build",
+		"dev"         : "react-scripts start",
+		"build"       : "react-scripts build",
+		"test"        : "react-scripts test --env=jsdom",
+		"eject"       : "react-scripts eject",
+
     "precommit": "lint-staged",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint-css": "stylelint \"src/**/*.{css,less,scss,sss}\"",
